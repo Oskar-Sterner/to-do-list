@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <title>Todolist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="scss/main.scss" type="text/css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header id="mainheader">
+        <div class="contain">
+            <h1 id="logo">Todolista</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>En todolista</h2>
+
+        <h3>Lägg till ny sak att göra</h3>
+
+        <section id="new">
+            <label for="newtodo">Att göra</label><br>
+            <input type="text" id="newtodo">&nbsp;
+            <button class="btn" id="newtodobutton" >Lägg till</button><br>
+            <span id="message"></span>
+            
+        </section>
+
+        <h3>Saker att göra</h3>
+        <ul id="todolist"> 
+        </ul>
+
+        <button id="clearbutton" class="btn">Reset</button>
+
+        <footer>
+            <p>Oskar S | Todolista</p>
+        </footer>
+    </div>
+</body>
+</html>
